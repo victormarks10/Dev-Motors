@@ -5,59 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title> Dev Motors</title>
 </head>
 
 <body>
-
-    <div>
-        <div>
-            <h1> Dev Motors</h1>
+    <div class="container">
+        <div class="navbar">
+            <img src="./assets/Logotipo_para_lava_jato_e_serviço_de_limpeza_de_carros_Autoclean__1_-removebg-preview.png"
+                alt="" class="logo">
             <nav>
-                <ul>
-                    <li>
-                        <a> Consórcio</a>
-                    </li>
-                    <li>
-                        <a> Financiamento</a>
-                    </li>
-                    <li>
-                        <a> Seguros</a>
-                    </li>
-                    <li>
-                        <a> Outros</a>
-                    </li>
+                <ul id="menu-list">
+                    <li class="nav-li"><a class="nav-link">Consorcios</a></li>
+                    <li class="nav-li"><a class="nav-link">Financiamentos</a></li>
+                    <li class="nav-li"><a class="nav-link">Seguros</a></li>
                 </ul>
             </nav>
+            <img  src="./assets/menu (1).png" alt="" class="menu-icon" onclick="ShowMenu()">
         </div>
 
-        <div>
-            <div>
-                <h2> Cg 160 Titan 2023</h2>
-                <h3> A CG 160 Titan chegou mais esportiva do que nunca</h3>
-                <p> Encontre uma concessionária mais proxima de você</p>
-                <label> Apartir de
-                    <p> R$ 15.810 *</p>
-                </label>
-                <button> Comprar agora</button>
-            </div>
-
-            <div>
-                <img src="./assets/CG Titan - Prata metálico.png" alt="Moto">
-                <div></div>
-                <button>
-                    <img src="./assets/add-icon--endless-icons-21.png" alt="add">
+        <div class="row">
+            <div class="column-1">
+                <h2> CG 160 titan</h2>
+                <h3>A CG 160 Titan chegou mais esportiva do que nunca.</h3>
+                <p>Encontre uma concessionária mais proxima de você</p>
+                <h4> R$ 15.810 </h4>
+                <button class="buy">Comprar agora
+                    <img src="./assets/arrow.png" alt="">
                 </button>
             </div>
+
+            <div class="column-2">
+                <img class="motors" src="./assets/CG Titan-Cinza.png" id="imagem">
+                <div class="color-box"></div>
+                <button class="add-cart" onclick="trocarImagem()">
+                    <img src="./assets/add (1).png" alt="adicionar-ao-carrinho">
+                </button>
+                <br>
+            </div>
         </div>
-        <div>
-            <img src="./assets/fb (1).png" alt="">
-            <img src="./assets/ig (1).png" alt="">
-            <img src="./assets/tw (1).png" alt="">
+        <div class="social-links">
+            <img src="./assets/fb (1).png">
+            <img src="./assets/ig (1).png">
+            <img src="./assets/tw (1).png">
         </div>
     </div>
-
 </body>
+
+<script src="./script.js">
+
+</script>
 
 </html>
